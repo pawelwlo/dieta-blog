@@ -2,18 +2,18 @@ const express = require('express');
 const path = require('path');
 const fileupload = require('express-fileupload');
 
-let initial_path = path.join(__dirname, "/");
+let initial_path = path.join(__dirname, "/dieta-blog");
 
 const app = express();
 app.use(express.static(initial_path));
 app.use(fileupload());
 
 app.get('/', (req,res) => {
-    res.sendFile(path.join(initial_path, "/dieta-blog/home.html"));
+    res.sendFile(path.join(initial_path, "/home.html"));
 })
 
 app.get('/editor', (req, res) => {
-    res.sendFile(path.join(initial_path, "/dieta-blog/editor.html"));
+    res.sendFile(path.join(initial_path, "/editor.html"));
 })
 
 //upload link
@@ -38,15 +38,15 @@ app.post('/uploads', (req, res) => {
 });
 
 app.get("/:blog", (req,res) => {
-    res.sendFile(path.join(initial_path, "/dieta-blog/blog.html"));
+    res.sendFile(path.join(initial_path, "/blog.html"));
 }) 
 
 app.get("/:about", (req,res) => {
-    res.sendFile(path.join(initial_path, "/dieta-blog/about.html"));
+    res.sendFile(path.join(initial_path, "/about.html"));
 }) 
 
 app.get("/:contact", (req,res) => {
-    res.sendFile(path.join(initial_path, "/dieta-blog/contact.html"));
+    res.sendFile(path.join(initial_path, "/contact.html"));
 }) 
 app.use((req,res) => {
     res.json("404");
