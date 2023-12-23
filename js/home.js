@@ -1,4 +1,4 @@
-import { db } from "/js/firebase.js";
+import { db } from "/dieta-blog/js/firebase.js";
 import { doc, getDocs, collection } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 const blogSection = document.querySelector('.blog-section');
