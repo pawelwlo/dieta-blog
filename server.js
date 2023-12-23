@@ -9,11 +9,11 @@ app.use(express.static(initial_path));
 app.use(fileupload());
 
 app.get('/', (req,res) => {
-    res.sendFile(path.join(initial_path, "/home.html"));
+    res.sendFile(path.join(initial_path, "/dieta-blog/home.html"));
 })
 
 app.get('/editor', (req, res) => {
-    res.sendFile(path.join(initial_path, "/editor.html"));
+    res.sendFile(path.join(initial_path, "/dieta-blog/editor.html"));
 })
 
 //upload link
@@ -38,15 +38,15 @@ app.post('/uploads', (req, res) => {
 });
 
 app.get("/:blog", (req,res) => {
-    res.sendFile(path.join(initial_path, "/blog.html"));
+    res.sendFile(path.join(initial_path, "/dieta-blog/blog.html"));
 }) 
 
 app.get("/:about", (req,res) => {
-    res.sendFile(path.join(initial_path, "/about.html"));
+    res.sendFile(path.join(initial_path, "/dieta-blog/about.html"));
 }) 
 
 app.get("/:contact", (req,res) => {
-    res.sendFile(path.join(initial_path, "/contact.html"));
+    res.sendFile(path.join(initial_path, "/dieta-blog/contact.html"));
 }) 
 app.use((req,res) => {
     res.json("404");
