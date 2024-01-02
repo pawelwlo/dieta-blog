@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const fileupload = require('express-fileupload');
 
-let initial_path = path.join(__dirname, "dieta-blog");
+let initial_path = path.join(__dirname, "/Users/pawel/Documents/dieta/diet-blog-b8ca5-firebase-adminsdk-qx1rn-9b0c7838d7.json");
 
 const app = express();
 app.use(express.static(initial_path));
