@@ -1,7 +1,7 @@
 
  
 
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
   import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
  
