@@ -1,5 +1,5 @@
 
-import {db} from "/js/firebase.js"
+import {db} from "js/firebase.js"
 import { doc, setDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
  
 
@@ -30,7 +30,7 @@ const uploadImage = (uploadFile, uploadType) => {
         const formData = new FormData();
         formData.append('image', file);
 
-        fetch('/uploads', {
+        fetch('uploads', {
             method: 'POST', 
             body: formData
         }).then(res => res.json())
