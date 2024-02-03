@@ -22,7 +22,7 @@ uploadInput.addEventListener('change', () => {
     uploadImage(uploadInput, "image");
 })
 
-
+console.log(location.origin);
 
 const uploadImage = (uploadFile, uploadType) => {
     const [file] = uploadFile.files;
